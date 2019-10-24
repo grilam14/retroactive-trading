@@ -2,6 +2,7 @@
 #include <iostream>
 
 using namespace std;
+//This data structure is pretty terrible. There is also no dynamic nature. Need to stream in data on a server somehow. Would be nice. 
 
 Stocks::Stocks(string d, double o, double h, double l, double c, int v, double ac)
 {
@@ -11,6 +12,9 @@ Stocks::Stocks(string d, double o, double h, double l, double c, int v, double a
   double low=l;
   int volume=v;
   double adjustedclose=ac;//Date, Open, High, Low, Close, Volume, Adjusted Close
+  double avg = high/low;
+  //consider keeping avarege to reduce computation time.:x
+
 }
 
 
